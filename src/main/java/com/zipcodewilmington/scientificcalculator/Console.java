@@ -1,7 +1,7 @@
 package com.zipcodewilmington.scientificcalculator;
 
 import java.util.Scanner;
-//main input and display
+
 /**
  * Created by leon on 2/9/18.
  */

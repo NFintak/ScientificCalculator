@@ -2,4 +2,4 @@ package com.zipcodewilmington.scientificcalculator;
 
 public class SciCalc {
 }
-//Hi
+//x equals first input, y equals second input

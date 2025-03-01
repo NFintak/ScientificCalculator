@@ -1,4 +1,4 @@
 package com.zipcodewilmington.scientificcalculator;
-//hi
+//first input = 1, second input = 2
 public class BasicCalc {
 }

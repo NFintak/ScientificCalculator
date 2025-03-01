@@ -25,10 +25,26 @@ public double InverseTangent(x) {
     return Math.atan(x);
 }
 
+//Switch Trig Units
+
+
+public double Radians(x) {
+    return Math.toRadians(x);
+}
+public double Degrees(x) {
+    return Math.toDegrees(x);
+}
+
 //Log Functions
 public double Log(x) {
     return Math.log(x);
 }
+public double InverseLog(x) {
+    return Math.pow(10, x);
+}
 public double Ln (x) {
     return (Math.log(x)/0.4342944819);
+}
+public double ex (x) {
+    return Math.exp(x);
 }

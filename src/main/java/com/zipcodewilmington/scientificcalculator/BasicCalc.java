@@ -1,10 +1,6 @@
 package com.zipcodewilmington.scientificcalculator;
 //first input = x, second input = y
 public class BasicCalc {
-    public static void main(String[] args) {
-
-    }
-
     double addTwoNumbers(double x, double y) {
         return (x + y);
     }
@@ -19,6 +15,9 @@ public class BasicCalc {
     }
     double squareNumber(double x) {
         return (x * x);
+    }
+    double inverseNumber(double x) {
+        return (1 / x);
     }
     double squareRoot(double x) {
         return (Math.sqrt(x));

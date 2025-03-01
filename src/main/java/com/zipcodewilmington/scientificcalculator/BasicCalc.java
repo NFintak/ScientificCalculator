@@ -36,7 +36,27 @@ public class BasicCalc {
                 System.out.println(x + " * " + y + " = " + result);
                 break;
             case '/':
-                //add additional cases
+                if (y == 0) {
+                    System.out.println("Err: cannot divide by 0");
+                } else if (x == 1) {
+                    result = inverseNumber(y);
+                    System.out.println("1 / " + y + " = " + result);
+                } else {
+                    result = divideTwoNumbers(x, y);
+                    System.out.println(x + " / " + y + " = " + result);
+                }
+                break;
+            case '^':
+                if (y == 2) {
+                    result = squareNumber(x);
+                    System.out.println(x + " ^ 2 = " + result);
+                } else {
+                    result = variableExp(x, y);
+                    System.out.println(x + " ^ " + y + " = " + result);
+                }
+                break;
+            default:
+                break;
         }
     }
     double addTwoNumbers(double x, double y) {
@@ -54,8 +74,8 @@ public class BasicCalc {
     double squareNumber(double x) {
         return (x * x);
     }
-    double inverseNumber(double x) {
-        return (1 / x);
+    double inverseNumber(double y) {
+        return (1 / y);
     }
     double squareRoot(double x) {
         return (Math.sqrt(x));

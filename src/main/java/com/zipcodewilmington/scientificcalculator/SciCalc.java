@@ -14,7 +14,7 @@ public class SciCalc {
            public static void String "DisplayMode" (String[] args){
         Scanner scanner = new Scanner(System.in);
         System.out.print("Select: 1. binary, 2. octal, 3. decimal, 4. hexadecimal or 5. Exit");
-        String input = scanner.nextInt();
+        String input = scanner.nextLine();
 
         switch(input){
             case(1):
@@ -69,9 +69,6 @@ public class SciCalc {
     //Trig Functions it needs to be called then have user select function then run
     double Sine(x) {
         return Math.sin(x);
-    }
-    double InverseSine(x) {
-        return Math.asin(x);
     }
     double InverseSine(x) {
         return Math.asin(x);

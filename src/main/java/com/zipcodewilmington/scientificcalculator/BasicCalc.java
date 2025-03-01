@@ -5,16 +5,24 @@ public class BasicCalc {
 
     }
 
-    int addTwoNumbers(int x, int y) {
+    double addTwoNumbers(double x, double y) {
         return (x + y);
     }
-    int subTwoNumbers(int x, int y) {
+    double subTwoNumbers(double x, double y) {
         return (x - y);
     }
-    int multiplyTwoNumbers(int x, int y) {
+    double multiplyTwoNumbers(double x, double y) {
         return (x * y);
     }
-    int divideTwoNumbers(int x, int y) {
+    double divideTwoNumbers(double x, double y) {
         return (x / y);
     }
+    double squareNumber(double x) {
+        return (x * x);
+    }
+    double squareRoot(double x) {
+        return (Math.sqrt(x));
+    }
+
+
 }

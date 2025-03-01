@@ -1,10 +1,13 @@
 package com.zipcodewilmington.scientificcalculator;
 
+import java.util.Scanner;
+
 public class SciCalc {
     System.out.println(Cosine);
 }
 //x equals first input, y equals second input
 double x=10.0
+
 //Trig Functions
 public double Sine(x) {
     return Math.sin(x);
@@ -26,13 +29,24 @@ public double InverseTangent(x) {
 }
 
 //Switch Trig Units
+public static void String "Degree/Radian" (String[] args){
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("Select to Radian, Degree, or Exit");
+    String input = scanner.nextInt();
 
+switch(input){
+        case"Radian":
+        return Math.toRadians(x);
+        break;
 
-public double Radians(x) {
-    return Math.toRadians(x);
-}
-public double Degrees(x) {
-    return Math.toDegrees(x);
+        case"Degree":
+        return Math.toDegrees(x);
+        break;
+
+        case"Exit":
+        return x;
+        break;
+            }
 }
 
 //Log Functions

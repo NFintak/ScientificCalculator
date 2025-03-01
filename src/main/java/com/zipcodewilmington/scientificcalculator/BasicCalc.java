@@ -1,5 +1,5 @@
 package com.zipcodewilmington.scientificcalculator;
-//first input = 1, second input = 2
+//first input = x, second input = y
 public class BasicCalc {
     public static void main(String[] args) {
 
@@ -22,6 +22,9 @@ public class BasicCalc {
     }
     double squareRoot(double x) {
         return (Math.sqrt(x));
+    }
+    double variableExp(double x, double y) {
+        return (Math.pow(x, y));
     }
 
 

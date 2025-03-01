@@ -15,8 +15,8 @@ public class BasicCalc {
         System.out.println("First number: ");
         double input1 = scanner.nextDouble();
         System.out.println("Operator: ");
-        String prompt = scanner.nextLine();
-        char func = prompt.charAt(0);
+        String operator = scanner.nextLine();
+        char func = operator.charAt(0);
         System.out.println("Second number: ");
         double input2 = scanner.nextDouble();
         x = input1;
@@ -31,6 +31,12 @@ public class BasicCalc {
                 result = subTwoNumbers(x, y);
                 System.out.println(x + " - " + y + " = " + result);
                 break;
+            case '*':
+                result = multiplyTwoNumbers(x, y);
+                System.out.println(x + " * " + y + " = " + result);
+                break;
+            case '/':
+                //add additional cases
         }
     }
     double addTwoNumbers(double x, double y) {

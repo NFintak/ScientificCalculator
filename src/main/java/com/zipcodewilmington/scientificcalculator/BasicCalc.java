@@ -3,11 +3,11 @@ package com.zipcodewilmington.scientificcalculator;
 import java.util.Scanner;
 
 public class BasicCalc {
-    public static String Basic(String[] args) {
+    public void basicCalc(String[] args) {
         BasicCalc basicCalc = new BasicCalc();
         basicCalc.runBasicCalc();
-
     }
+
     Scanner scanner = new Scanner(System.in);
     StringBuilder equations = new StringBuilder();
     double num1; //definitely need to fix
@@ -44,38 +44,43 @@ public class BasicCalc {
         return this.operator;
     }
     public double addTwoNumbers(double num1, double num2) {
-        result = num1 + num2;
-        return result;
+        double sum = num1 + num2;
+        return sum;
     }
     public double subTwoNumbers(double num1, double num2) {
-        result = num1 - num2;
-        return result;
+        double difference = num1 - num2;
+        return difference;
     }
     public double multiplyTwoNumbers(double num1, double num2) {
-        result = num1 * num2;
-        return result;
+        double product = num1 * num2;
+        return product;
     }
     public double divTwoNumbers(double num1, double num2) {
-        result = num1 / num2;
-        return result;
+        double quotient = num1 / num2;
+        return quotient;
     }
     public double inverseNumber(double num1) {
-        result = 1 / num1;
-        return result;
+        //double inverse;
+        //return inverse;
     }
     public double squareNumber(double num1) {
-        result = num1 * num1;
-        return result;
+        double squared = num1 * num1;
+        return squared;
     }
     public double varExponent(int num1, int num2) {
-        result = num1 ^ num2;
-        return result;
+        double exponent = num1 ^ num2;
+        return exponent;
     }
     public double squareRoot(double num1) {
-        result = Math.sqrt(num1);
-        return result;
+        double sqRoot = Math.sqrt(num1);
+        return sqRoot;
+    }
+    public double invertSign(double num1) {
+        //double invertedSign;
+        //return invertedSign;
     }
     public boolean closeBasicCalc() {
+        useBasicCalc = true;
         System.out.println("Exit Basic Calculator? (yes/no)");
         String response = scanner.nextLine();
         if (response.equalsIgnoreCase("yes")) {

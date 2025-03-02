@@ -6,7 +6,7 @@ import java.util.Scanner;
  * Created by leon on 2/9/18.
  */
 public class Console {
-
+    //may need to move "Scanner scanner = new Scanner(System.in);" to here so it's accessible across the class
     public static void print(String output, Object... args) {
         System.out.printf(output, args);
     }
@@ -23,10 +23,16 @@ public class Console {
     }
 
     public static Integer getIntegerInput(String prompt) {
+        //scan next line and return input
+        //println(prompt);
+        //return userInput = scanner.nextInt();
         return null;
     }
 
     public static Double getDoubleInput(String prompt) {
+        //scan next line and return input
+        //println(prompt);
+        //return userInput = scanner.nextDouble();
         return null;
     }
 }

@@ -60,8 +60,8 @@ public class BasicCalc {
         return quotient;
     }
     public double inverseNumber(double num1) {
-        double inverse = 1 / num1;
-        return inverse;
+        //double inverse;
+        //return inverse;
     }
     public double squareNumber(double num1) {
         double squared = num1 * num1;
@@ -74,6 +74,10 @@ public class BasicCalc {
     public double squareRoot(double num1) {
         double sqRoot = Math.sqrt(num1);
         return sqRoot;
+    }
+    public double invertSign(double num1) {
+        //double invertedSign;
+        //return invertedSign;
     }
     public boolean closeBasicCalc() {
         useBasicCalc = true;

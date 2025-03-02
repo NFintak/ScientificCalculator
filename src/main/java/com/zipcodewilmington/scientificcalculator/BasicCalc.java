@@ -87,13 +87,22 @@ public class BasicCalc {
         }
     }
 
+    public void runEquations() {
+        //pull inputs from console
+        //convert string input for operator into character input
+        //run character input against either switch or if/else to find correct equation
+        //run double inputs through appropriate method, return result
+        //display result on console (with or without full equation?)
+    }
+
     public void runBasicCalc() {
         System.out.println("Basic Calculator:");
-
-
-        System.out.println("Enter 'exit' to close Basic Calculator");
-        if (scanner.next().equalsIgnoreCase("exit")) {
-            closeBasicCalc();
+        while (useBasicCalc) {
+            this.runEquations();
+            System.out.println("Enter 'exit' to close Basic Calculator");
+            if (scanner.next().equalsIgnoreCase("exit")) {
+                this.closeBasicCalc();
+            }
         }
     }
 

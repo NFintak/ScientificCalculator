@@ -1,50 +1,47 @@
 package com.zipcodewilmington.scientificcalculator;
 
 import junit.framework.TestCase;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class BasicCalcTest extends TestCase{
-
     @Test
-    public void basic() {
-        BasicCalc Basic = new BasicCalc();
+    public void {
 
     }
 
     @Test
-    public void addTwoNumbers() {
-    }
+    public void
 
     @Test
-    public void subTwoNumbers() {
-    }
+    public void
 
     @Test
-    public void multiplyTwoNumbers() {
-    }
+    public void
 
     @Test
-    void divideTwoNumbers() {
-    }
+    public void
 
     @Test
-    void squareNumber() {
-    }
+    public void
 
     @Test
-    void inverseNumber() {
-    }
+    public void
 
     @Test
-    void squareRoot() {
-    }
+    public void
 
     @Test
-    void variableExp() {
-    }
+    public void
 
     @Test
+    public void
 
+    @Test
+    public void
+
+    @Test
+    public void
 
 
 }

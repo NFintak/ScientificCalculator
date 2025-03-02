@@ -3,113 +3,95 @@ package com.zipcodewilmington.scientificcalculator;
 import java.util.Scanner;
 
 public class BasicCalc {
-    Scanner scanner = new Scanner(System.in);
-    double x;
-    double y;
-    double result;
-    boolean useBasicCalc = true;
-
-
-    public double addTwoNumbers() {
-        return result = (x + y);
-    }
-    public double subTwoNumbers() {
-        return result = (x - y);
-    }
-    public double multiplyTwoNumbers() {
-        return result = (x * y);
-    }
-    public double divideTwoNumbers() {
-        return result = (x / y);
-    }
-    public double squareNumber() {
-        return result = (x * x);
-    }
-    public double inverseNumber() {
-        return result = (1 / y);
-    }
-    public double squareRoot() {
-        return result = (Math.sqrt(x));
-    }
-    public double variableExp() {
-        return result = (Math.pow(x, y));
-    }
-
-    public void runBasicCalc() {
-        while (useBasicCalc) {
-            this.
-        }
-    }
-
-    public String Basic(String[] args) {
+    public static String Basic(String[] args) {
         BasicCalc basicCalc = new BasicCalc();
         basicCalc.runBasicCalc();
 
-        System.out.println("Basic Calculator:");
-        System.out.println("First number: ");
-        double input1 = scanner.nextDouble();
-        System.out.println("Operator: ");
-        String operator = scanner.nextLine();
-        char func = operator.charAt(0);
-        if (func != '√') {
-            System.out.println("Second number: ");
-        }
-        double input2 = scanner.nextDouble();
-        x = input1;
-        y = input2;
-        String divZeroErr = "Err: cannot divide by 0";
-        String genericErr = "Err";
+    }
+    Scanner scanner = new Scanner(System.in);
+    StringBuilder equations = new StringBuilder();
+    double num1 = Console.getDoubleInput("Input first double; ");
+    double num2 = Console.getDoubleInput("Input second double; ");
+    String operator = Console.getStringInput("Input operation: ");
+    double result;
+    boolean useBasicCalc;
+//    String errMessage = "Err";
+//    boolean errPresent = false;
 
-        switch (func) {
-            case '+':
-                result = ;
-                return String.format("%.8f + %.8f = %.8f", x, y, result);
-                //System.out.println(x + " + " + y + " = " + result);
-                break;
-            case '-':
-                result = subTwoNumbers(x, y);
-                return String.format("%.8f - %.8f = %.8f", x, y, result);
-                //System.out.println(x + " - " + y + " = " + result);
-                break;
-            case '*':
-                result = multiplyTwoNumbers(x, y);
-                return String.format("%.8f * %.8f = %.8f", x, y, result);
-                //System.out.println(x + " * " + y + " = " + result);
-                break;
-            case '/':
-                if (y == 0) {
-                    return divZeroErr;
-                    //System.out.println("Err: cannot divide by 0");
-                } else if (x == 1) {
-                    result = inverseNumber(y);
-                    return String.format("1 / %.8f = %.8f", y, result);
-                    //System.out.println("1 / " + y + " = " + result);
-                } else {
-                    result = divideTwoNumbers(x, y);
-                    return String.format("%.8f / %.8f = %.8f", x, y, result);
-                    //System.out.println(x + " / " + y + " = " + result);
-                }
-                break;
-            case '^':
-                if (y == 2) {
-                    result = squareNumber(x);
-                    return String.format("%.8f ^ 2 = %.8f", x, result);
-                    //System.out.println(x + " ^ 2 = " + result);
-                } else {
-                    result = variableExp(x, y);
-                    return String.format("%.8f ^ %.8f = %.8f", x, y, result);
-                    //System.out.println(x + " ^ " + y + " = " + result);
-                }
-                break;
-            case '√':
-                result = squareRoot(x);
-                return String.format("√ %.8f = %.8f", x, result);
-                //System.out.println("√" + x + " = " + result);
-            default:
-                return genericErr;
-                //System.out.println("Error"); //fill in with error message
-                break;
+/* might be better to move this to the mainApp
+    public boolean errPrompt(boolean errPresent) {
+        String lineClear = "";
+        System.out.println(errMessage);
+        System.out.println("Press enter to clear message");
+        lineClear = scanner.nextLine();
+            if (lineClear.equals("")) {
+                return !errPresent;
+            } else {
+                return errPresent;
+            }
+    }
+*/
+    public double getNum1() {
+        num1 = scanner.nextDouble();
+        return this.num1;
+    }
+    public double getNum2() {
+        num2 = scanner.nextDouble();
+        return this.num2;
+    }
+    public String getOperator() {
+        operator = scanner.next();
+        return this.operator;
+    }
+    public double addTwoNumbers(double num1, double num2) {
+        result = num1 + num2;
+        return result;
+    }
+    public double subTwoNumbers(double num1, double num2) {
+        result = num1 - num2;
+        return result;
+    }
+    public double multiplyTwoNumbers(double num1, double num2) {
+        result = num1 * num2;
+        return result;
+    }
+    public double divTwoNumbers(double num1, double num2) {
+        result = num1 / num2;
+        return result;
+    }
+    public double inverseNumber(double num1) {
+        result = 1 / num1;
+        return result;
+    }
+    public double squareNumber(double num1) {
+        result = num1 * num1;
+        return result;
+    }
+    public double varExponent(int num1, int num2) {
+        result = num1 ^ num2;
+        return result;
+    }
+    public double squareRoot(double num1) {
+        result = Math.sqrt(num1);
+        return result;
+    }
+    public boolean closeBasicCalc() {
+        System.out.println("Exit Basic Calculator? (yes/no)");
+        String response = scanner.nextLine();
+        if (response.equalsIgnoreCase("yes")) {
+            return !useBasicCalc;
+        } else if (response.equalsIgnoreCase("no")) {
+            return useBasicCalc;
+        } else {
+            return useBasicCalc;
         }
+    }
+
+    public void runBasicCalc() {
+        System.out.println("Basic Calculator:");
+
+
+        System.out.println("Enter 'exit' to close Basic Calculator");
 
     }
 

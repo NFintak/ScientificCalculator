@@ -5,45 +5,46 @@ import org.junit.Test;
 
 public class BasicCalcTest extends TestCase{
 
-    @org.junit.jupiter.api.Test
+    @Test
     public void basic() {
         BasicCalc Basic = new BasicCalc();
 
     }
 
-    @org.junit.jupiter.api.Test
-    void addTwoNumbers() {
+    @Test
+    public void addTwoNumbers() {
     }
 
-    @org.junit.jupiter.api.Test
-    void subTwoNumbers() {
+    @Test
+    public void subTwoNumbers() {
     }
 
-    @org.junit.jupiter.api.Test
-    void multiplyTwoNumbers() {
+    @Test
+    public void multiplyTwoNumbers() {
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void divideTwoNumbers() {
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void squareNumber() {
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void inverseNumber() {
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void squareRoot() {
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void variableExp() {
     }
 
     @Test
+
 
 
 }

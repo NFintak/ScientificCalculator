@@ -63,7 +63,6 @@ public class BasicCalcTest extends TestCase{
     @Test
     public void test1inverseNumber() {
         BasicCalc basicCalc1 = new BasicCalc();
-        double actual =
     }
 
     @Test

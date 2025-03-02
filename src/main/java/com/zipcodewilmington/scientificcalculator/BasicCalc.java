@@ -10,9 +10,9 @@ public class BasicCalc {
     }
     Scanner scanner = new Scanner(System.in);
     StringBuilder equations = new StringBuilder();
-    double num1 = Console.getDoubleInput("Input first double; ");
-    double num2 = Console.getDoubleInput("Input second double; ");
-    String operator = Console.getStringInput("Input operation: ");
+    double num1; //definitely need to fix
+    double num2;
+    String operator;
     double result;
     boolean useBasicCalc;
 //    String errMessage = "Err";
@@ -92,7 +92,9 @@ public class BasicCalc {
 
 
         System.out.println("Enter 'exit' to close Basic Calculator");
-
+        if (scanner.next().equalsIgnoreCase("exit")) {
+            closeBasicCalc();
+        }
     }
 
 }

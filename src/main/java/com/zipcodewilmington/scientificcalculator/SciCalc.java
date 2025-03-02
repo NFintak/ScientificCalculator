@@ -3,9 +3,17 @@ package com.zipcodewilmington.scientificcalculator;
 import java.util.Scanner;
 
 public class SciCalc {
-
+    SciCalc sciCalc = new SciCalc();
     //x equals first input, y equals second input
-
+public int testing(int number){
+    if (number > 0) {
+        return "Yes";
+    }
+    else {
+        return "No";
+    }
+}
+}
     //Need a select desired function aspect...a really long switch statement?
 
     double x=10.0
@@ -67,22 +75,23 @@ public class SciCalc {
 
 
     //Trig Functions it needs to be called then have user select function then run
-    double Sine(x) {
+    public double Sine(x) {
         return Math.sin(x);
     }
-    double InverseSine(x) {
+
+    public double InverseSine(x) {
         return Math.asin(x);
     }
-    double Cosine(x) {
+    public double Cosine(x) {
         return Math.cos(x);
     }
-    double InverseCosine(x) {
+    public double InverseCosine(x) {
         return Math.acos(x);
     }
-    double Tangent(x) {
+    public double Tangent(x) {
         return Math.tan(x);
     }
-    double InverseTangent(x) {
+    public double InverseTangent(x) {
         return Math.atan(x);
     }
 

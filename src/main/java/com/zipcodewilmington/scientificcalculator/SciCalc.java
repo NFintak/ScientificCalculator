@@ -3,17 +3,13 @@ package com.zipcodewilmington.scientificcalculator;
 import java.util.Scanner;
 
 public class SciCalc {
+//Make Factorial Function
     public void sciCalc(String[] args) {
         SciCalc sciCalc = new SciCalc();
 
         public static double x;
 
-        public static SelectFunction (String[]args){
-            Scanner scanner = new Scanner(System.in);
-            System.out.print("Select: DisplayMode, Memory, Trig, DegreeRadian, LogFunctions");
-            String input = scanner.nextLine();
-            method(input) ();
-        }
+
 
         //x equals first input, y equals second input
 
@@ -151,5 +147,11 @@ public class SciCalc {
             scanner.close();
         }
 
+    }
+    public static void SelectFunction (){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Select: DisplayMode, Memory, Trig, DegreeRadian, LogFunctions");
+        String input = scanner.nextLine();
+        method(input) ();
     }
 }

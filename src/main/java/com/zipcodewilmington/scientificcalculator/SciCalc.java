@@ -95,24 +95,30 @@ public class SciCalc {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Select: Sine, InverseSine, Cosine, Tangent, InverseTangent");
         String input = scanner.nextLine();
-        public double Sine {
-            return Math.sin(x);
+        public static double Sine {
+            double result = Math.sin(x);
+            return result;
         }
 
-        public double InverseSine {
-            return Math.asin(x);
+        public static double InverseSine {
+            double result = Math.asin(x);
+            return result;
         }
         public double Cosine {
-            return Math.cos(x);
+            double result = Math.cos(x);
+            return result;
         }
         public double InverseCosine {
-            return Math.acos(x);
+            double result = Math.acos(x);
+            return result;
         }
         public double Tangent {
-            return Math.tan(x);
+            double result = Math.tan(x);
+            return result;
         }
         public double InverseTangent {
-            return Math.atan(x);
+            double result = Math.atan(x);
+            return result;
         }
         scanner.close();
     }

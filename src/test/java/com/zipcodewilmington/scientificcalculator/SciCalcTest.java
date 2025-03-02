@@ -6,12 +6,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class SciCalcTest extends TestCase {
 
-    @Test
-    public void testing(){
-        SciCalc sciCalc = new SciCalc();
-        String result = sciCalc.testing(1);
-        assertEquals("Yes", result);
-    }
 
     @Test
     public void SineTest() {

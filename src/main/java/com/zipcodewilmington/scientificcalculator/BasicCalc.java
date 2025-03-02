@@ -11,35 +11,39 @@ public class BasicCalc {
 
 
     public double addTwoNumbers() {
-        return (x + y);
+        return result = (x + y);
     }
     public double subTwoNumbers() {
-        return (x - y);
+        return result = (x - y);
     }
     public double multiplyTwoNumbers() {
-        return (x * y);
+        return result = (x * y);
     }
     public double divideTwoNumbers() {
-        return (x / y);
+        return result = (x / y);
     }
     public double squareNumber() {
-        return (x * x);
+        return result = (x * x);
     }
     public double inverseNumber() {
-        return (1 / y);
+        return result = (1 / y);
     }
     public double squareRoot() {
-        return (Math.sqrt(x));
+        return result = (Math.sqrt(x));
     }
     public double variableExp() {
-        return (Math.pow(x, y));
+        return result = (Math.pow(x, y));
     }
 
     public void runBasicCalc() {
-
+        while (useBasicCalc) {
+            this.
+        }
     }
 
     public String Basic(String[] args) {
+        BasicCalc basicCalc = new BasicCalc();
+        basicCalc.runBasicCalc();
 
         System.out.println("Basic Calculator:");
         System.out.println("First number: ");
@@ -58,7 +62,7 @@ public class BasicCalc {
 
         switch (func) {
             case '+':
-                result = addTwoNumbers(x, y);
+                result = ;
                 return String.format("%.8f + %.8f = %.8f", x, y, result);
                 //System.out.println(x + " + " + y + " = " + result);
                 break;

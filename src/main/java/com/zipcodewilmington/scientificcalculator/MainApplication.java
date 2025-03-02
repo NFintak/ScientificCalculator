@@ -3,6 +3,16 @@ package com.zipcodewilmington.scientificcalculator;
 /**
  * Created by leon on 2/9/18.
  */
+
+// Default Display= 0
+    // Display current value
+    // Clear display "display=0"
+    // Scan input change display to input
+    // Default to BasicCalc (move methods from BasicCalc.java to Main with option to open SciCalc
+    // Err message when cannot compute
+    // Clear display required after Err
+    // After value entered request choosing of operation (BasicCalc) or SciCalc (which opens SciCalc which would list options
+
 public class MainApplication {
     public static void main(String[] args) {
         Console.println("Welcome to my calculator!");

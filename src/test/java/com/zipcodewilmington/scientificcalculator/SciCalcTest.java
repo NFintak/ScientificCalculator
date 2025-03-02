@@ -1,51 +1,51 @@
-package com.zipcodewilmington.scientificcalculator;
+package com.zipcodewilmington.scientificcalculator.SciCalc;
 
-import junit.framework.TestCase;
-import org.junit.Test;
+import com.zipcodewilmington.scientificcalculator.SciCalc
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class SciCalcTest extends TestCase {
 
-//    @Test
-//    public void testing(){
-//        SciCalc sciCalc = new SciCalc();
-//        String result = sciCalc.testing(1);
-//        assertEquals("Yes", result);
-//    }
-//
-//    @Test
-//    public void SineTest() {
-//        SciCalc sciCalc = new SciCalc();
-//        int result = sciCalc.Sine(30);
-//
-//        assertEquals(0.5, result);
-//    }
-//
-//    @Test
-//    public void SineTest() {
-//        SciCalc sciCalc = new SciCalc();
-//        int result = sciCalc.Sine(90);
-//
-//        assertEquals(1, result);
-//    }
-//
-//    @Test
-//    public void SineTest() {
-//        SciCalc sciCalc = new SciCalc();
-//        int result = sciCalc.Sine(90);
-//
-//        assertEquals(1, result);
-//    }
+    @Test
+    public void testing(){
+        SciCalc sciCalc = new SciCalc();
+        String result = sciCalc.testing(1);
+        assertEquals("Yes", result);
+    }
 
+    @Test
+    public void SineTest() {
+        SciCalc sciCalc = new SciCalc();
+        int result = sciCalc.Sine(30);
 
-    @org.junit.jupiter.api.Test
+        assertEquals(0.5, result);
+    }
+
+    @Test
+    public void SineTest() {
+        SciCalc sciCalc = new SciCalc();
+        int result = sciCalc.Sine(90);
+
+        assertEquals(1, result);
+    }
+
+    @Test
+    public void SineTest() {
+        SciCalc sciCalc = new SciCalc();
+        int result = sciCalc.Sine(90);
+
+        assertEquals(1, result);
+    }
+
+@Test
     void testing1() {
         SciCalc sciCalc = new SciCalc();
         String result = sciCalc.testing(1);
         assertEquals("Yes", result);
     }
 
-    @org.junit.jupiter.api.Test
-    void sine() {
+@Test
+void sine() {
     }
 
     @org.junit.jupiter.api.Test

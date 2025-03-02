@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class SciCalc {
     SciCalc sciCalc = new SciCalc();
+
+    public static double x;
+
     //x equals first input, y equals second input
 public int testing(int number){
     if (number > 0) {
@@ -13,25 +16,24 @@ public int testing(int number){
         return "No";
     }
 }
-}
+
     //Need a select desired function aspect...a really long switch statement?
 
-    double x=10.0
 
             //Switch Display mode it should be a format change
-           public static void String "DisplayMode" (String[] args){
+           public static DisplayMode (String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Select: 1. binary, 2. octal, 3. decimal, 4. hexadecimal or 5. Exit");
         String input = scanner.nextLine();
 
         switch(input){
             case(1):
-                Integer.toBinaryString()
+                Integer.toBinaryString();
                 //something to change it, typing Integer. brought up a list scrolled and found answer...proper?
             break;
 
             case(2):
-                Integer.toOctalString()
+                Integer.toOctalString();
                 //sames as with "binary" seems to have built-in function
             break;
 
@@ -41,7 +43,7 @@ public int testing(int number){
                 break;
 
             case(4):
-                Integer.toHexString()
+                Integer.toHexString();
                 //sames as with "binary" seems to have built-in function
                 break;
 
@@ -53,13 +55,12 @@ public int testing(int number){
 
     //Memory Save
 
-    public static void String "Memory" (String[] args)
-
+    public static Memory (String[] args)
     {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Select: 1. M+, 2. MC, 3. MRC, or 4. Exit");
         String input = scanner.nextInt();
-        int z = 0
+        int z = 0;
         //z is the default for Memory
         switch (input) {
             case 1:
@@ -72,31 +73,32 @@ public int testing(int number){
                 x = z;
                 return x;
         }
+    }
 
 
     //Trig Functions it needs to be called then have user select function then run
-    public double Sine(x) {
+    public double Sine {
         return Math.sin(x);
     }
 
-    public double InverseSine(x) {
+    public double InverseSine {
         return Math.asin(x);
     }
-    public double Cosine(x) {
+    public double Cosine {
         return Math.cos(x);
     }
-    public double InverseCosine(x) {
+    public double InverseCosine {
         return Math.acos(x);
     }
-    public double Tangent(x) {
+    public double Tangent {
         return Math.tan(x);
     }
-    public double InverseTangent(x) {
+    public double InverseTangent {
         return Math.atan(x);
     }
 
     //Switch Trig Units it needs to be called then have user select function then run
-        public static void String "Degree/Radian" (String[] args){
+        public static DegreeRadian (String[] args){
         Scanner scanner = new Scanner(System.in);
         System.out.print("Select to 1. Radian, 2. Degree, or 3. Exit");
         String input = scanner.nextInt();
@@ -117,16 +119,16 @@ public int testing(int number){
     }
 
     //Log Functions it needs to be called then have user select function then run
-    double Log(x) {
+    public double Log {
         return Math.log(x);
     }
-    double InverseLog(x) {
+    double InverseLog {
         return Math.pow(10, x);
     }
-    double Ln (x) {
+    double Ln {
         return (Math.log(x)/0.4342944819);
     }
-    double ex (x) {
+    double ex {
         return Math.exp(x);
     }
 

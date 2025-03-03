@@ -4,10 +4,12 @@ import java.util.Scanner;
 
 public class SciCalc {
 
-        public void sciCalc(String[] args) {
+        public void main(String[] args) {
             SciCalc sciCalc = new SciCalc();
-            sciCalc.logFunctions();
-            sciCalc.displayMode()
+            Scanner scanner = new Scanner(System.in);
+            System.out.print("Select: displayMode, memory, trig, degreeRadian, logFunctions, factorial");
+            String input = scanner.nextLine();
+            sciCalc.(input);
         }
 
         public double x;
@@ -40,7 +42,6 @@ public class SciCalc {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Select: 1. binary, 2. octal, 3. decimal, 4. hexadecimal or 5. Exit");
         String input = scanner.nextLine();
-        int x = 10;
 
         switch (input) {
             case (1):
@@ -187,8 +188,8 @@ public class SciCalc {
 // Turned off line 8 undo comments mode if wrong
     public void selectFunction (){
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Select: DisplayMode, Memory, Trig, DegreeRadian, LogFunctions");
+        System.out.print("Select: displayMode, memory, trig, degreeRadian, logFunctions, factorial");
         String input = scanner.nextLine();
-        sciCalc.(input) ();
+        sciCalc(input);
     }
 }

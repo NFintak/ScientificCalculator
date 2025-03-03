@@ -3,7 +3,6 @@ package com.zipcodewilmington.scientificcalculator;
 import java.util.Scanner;
 
 public class SciCalc {
-//Make Factorial Function
 
     //    public void sciCalc(String[] args) {
 //        SciCalc sciCalc = new SciCalc();
@@ -167,6 +166,18 @@ public class SciCalc {
             }
             scanner.close();
         }
+
+    // Factorial Function
+    public static int Factorial(){
+        if (x == 0) {
+            return 1;
+        }
+        int recurse = Factorial(x - 1);
+        int result = x * recurse;
+        return result;
+        }
+
+    }
 
 //    }
 // Turned off line 8 undo comments mode if wrong

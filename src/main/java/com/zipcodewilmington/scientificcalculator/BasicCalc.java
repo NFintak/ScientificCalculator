@@ -51,7 +51,7 @@ public class BasicCalc {
         return squared;
     }
     public double varExponent(double num1, double num2) {
-        int exp1;
+        int exp1 = num1;
         int exp2;
         double exponent = exp1 ^ exp2;
         return exponent;
@@ -79,19 +79,19 @@ public class BasicCalc {
 //           pull inputs from console
 //           run String input against either switch or if/else to find correct equation
 //        switch (operator) {
-//            case("+"):
+//            case("+" || "add"):
 //                this.addTwoNumbers(num1, num2);
 //                break; // set equal to output in either main or console
-//            case("-"):
+//            case("-" || "subtract"):
 //                this.subTwoNumbers(num1, num2);
 //                break;
-//            case("*"):
+//            case("*" || "multiply"):
 //                this.multiplyTwoNumbers(num1, num2);
 //                break;
-//            case("/"):
+//            case("/" || "divide"):
 //                this.divTwoNumbers(num1, num2);
 //                break;
-//            case("Inv"):
+//            case("inv" || "inverse"):
 //                this.inverseNumber(num1);
 //                break;
 //            case("^2"):
@@ -100,7 +100,7 @@ public class BasicCalc {
 //            case("^"):
 //                this.varExponent(num1, num2);
 //                break;
-//            case("")
+//            case("" || "square root")
 
                 //this.varExponent(num1, num2);
         }

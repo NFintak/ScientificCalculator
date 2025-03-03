@@ -4,25 +4,28 @@ import java.util.Scanner;
 
 public class SciCalc {
 
-    //    public void sciCalc(String[] args) {
-//        SciCalc sciCalc = new SciCalc();
-//
-//        public static double x;
+        public void sciCalc(String[] args) {
+            SciCalc sciCalc = new SciCalc();
+            sciCalc.logFunctions();
+            sciCalc.displayMode()
+        }
 
-    int x = userInput;
+        public double x;
 
-    public static double LogFunctions(){
+//    int x = userInput;
+
+    public double logFunctions(){
         Scanner scanner = new Scanner(System.in);
         System.out.print("Select: Log, InverseLog, Ln, and E^x");
         String input = scanner.nextLine();
 
-        public double Log {
+        public double log {
             return Math.log(x);
         }
-        double InverseLog {
+        double inverseLog {
             return Math.pow(10, x);
         }
-        double Ln {
+        double ln {
             return (Math.log(x) / 0.4342944819);
         }
         double ex {
@@ -33,29 +36,30 @@ public class SciCalc {
 
     //Switch Display mode it should be a format change
 
-    public static double DisplayMode(){
+    public double displayMode(){
         Scanner scanner = new Scanner(System.in);
         System.out.print("Select: 1. binary, 2. octal, 3. decimal, 4. hexadecimal or 5. Exit");
         String input = scanner.nextLine();
+        int x = 10;
 
         switch (input) {
             case (1):
-                Integer.toBinaryString();
+                Integer.toBinaryString(x);
                 //something to change it, typing Integer. brought up a list scrolled and found answer...proper?
                 break;
 
             case (2):
-                Integer.toOctalString();
+                Integer.toOctalString(x);
                 //sames as with "binary" seems to have built-in function
                 break;
 
             case (3):
-                return String.format("%.8f", x);
+                return String.format("%.8f", Double.valueOf(x));
             //format x as a string with 8 in this case deciaml points
             break;
 
             case (4):
-                Integer.toHexString();
+                Integer.toHexString(x);
                 //sames as with "binary" seems to have built-in function
                 break;
 
@@ -68,7 +72,7 @@ public class SciCalc {
 
 
     //Memory Save
-    public static double Memory()
+    public double memory()
     {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Select: 1. M+, 2. MC, 3. MRC, or 4. Exit");
@@ -90,16 +94,16 @@ public class SciCalc {
     }
 
     //Trig Functions it needs to be called then have user select function then run
-    public static double Trig(){
+    public double trig(){
         Scanner scanner = new Scanner(System.in);
         System.out.print("Select: Sine, InverseSine, Cosine, Tangent, InverseTangent");
         String input = scanner.nextLine();
-        public static double Sine {
+        public double Sine {
             double result = Math.sin(x);
             return result;
         }
 
-        public static double InverseSine {
+        public double InverseSine {
             double result = Math.asin(x);
             return result;
         }
@@ -124,7 +128,7 @@ public class SciCalc {
 
         //Switch Trig Units it needs to be called then have user select function then run
 
-    public static double DegreeRadian() {
+    public double degreeRadian() {
             Scanner scanner = new Scanner(System.in);
             System.out.print("Select to 1. Radian, 2. Degree, or 3. Exit");
             String input = scanner.nextInt();
@@ -147,7 +151,7 @@ public class SciCalc {
 
         //Log Functions it needs to be called then have user select function then run
 
-    public static double LogFunctions(){
+    public double logFunctions(){
             Scanner scanner = new Scanner(System.in);
             System.out.print("Select: Log, InverseLog, Ln, and E^x");
             String input = scanner.nextLine();
@@ -168,7 +172,7 @@ public class SciCalc {
         }
 
     // Factorial Function
-    public static int Factorial(){
+    public int factorial(){
         if (x == 0) {
             return 1;
         }
@@ -179,12 +183,12 @@ public class SciCalc {
 
     }
 
-//    }
+    }
 // Turned off line 8 undo comments mode if wrong
-    public static void SelectFunction (){
+    public void selectFunction (){
         Scanner scanner = new Scanner(System.in);
         System.out.print("Select: DisplayMode, Memory, Trig, DegreeRadian, LogFunctions");
         String input = scanner.nextLine();
-        method(input) ();
+        sciCalc.(input) ();
     }
 }

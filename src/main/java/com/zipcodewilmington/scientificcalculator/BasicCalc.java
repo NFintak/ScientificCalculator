@@ -1,22 +1,14 @@
 package com.zipcodewilmington.scientificcalculator;
 //first input = x, second input = y
+//should only have methods, no switches
 import java.util.Scanner;
 
 public class BasicCalc {
-    public static void main(String[] args) {
-        BasicCalc basicCalc = new BasicCalc();
-        System.out.println("Basic Calculator:");
-
-
-    }
-
-    Scanner scanner = new Scanner(System.in);
-    StringBuilder equations = new StringBuilder();
     double num1; //change to string??
     double num2;
     String operator;
+    boolean useBasicCalc = true;
 /*    double result;
-    boolean useBasicCalc;
     String errMessage = "Err";
     boolean errPresent = false;
 
@@ -33,15 +25,7 @@ public class BasicCalc {
             }
     }
 
-    public double getNum1() {
-        return this.num1;
-    }
-    public double getNum2() {
-        return this.num2;
-    }
-    public String getOperator() {
-        return this.operator;
-    } */
+     */
     public double addTwoNumbers(double num1, double num2) {
         double sum = num1 + num2;
         return sum;
@@ -67,7 +51,8 @@ public class BasicCalc {
         return squared;
     }
     public double varExponent(double num1, double num2) {
-
+        int exp1;
+        int exp2;
         double exponent = exp1 ^ exp2;
         return exponent;
     }
@@ -79,9 +64,7 @@ public class BasicCalc {
         double invertedSign = -num1;
         return invertedSign;
     }
-    /*
     public boolean closeBasicCalc() {
-        useBasicCalc = true;
         System.out.println("Exit Basic Calculator? (yes/no)");
         String response = scanner.nextLine();
         if (response.equalsIgnoreCase("yes")) {
@@ -92,30 +75,32 @@ public class BasicCalc {
             return useBasicCalc;
         }
     }
-*/
-    public String runEquations(double num1, String operator, double num2) {
-        //    pull inputs from console
-        //    run String input against either switch or if/else to find correct equation
-        switch (operator) {
-            case("+"):
-                this.addTwoNumbers(num1, num2);
-                return ; // set equal to output in either main or console
-            case("-"):
-                this.subTwoNumbers(num1, num2);
-                return ;
-            case("*"):
-                this.multiplyTwoNumbers(num1, num2);
-                return ;
-            case("/"):
-                this.divTwoNumbers(num1, num2);
-                return ;
-            case("Inv"):
-                this.inverseNumber(num1);
-                return ;
-            case("^2"):
-                this.squareNumber(num1);
-                return ;
-            case("^"):
+//    public String runEquations(double num1, String operator, double num2) {
+//           pull inputs from console
+//           run String input against either switch or if/else to find correct equation
+//        switch (operator) {
+//            case("+"):
+//                this.addTwoNumbers(num1, num2);
+//                break; // set equal to output in either main or console
+//            case("-"):
+//                this.subTwoNumbers(num1, num2);
+//                break;
+//            case("*"):
+//                this.multiplyTwoNumbers(num1, num2);
+//                break;
+//            case("/"):
+//                this.divTwoNumbers(num1, num2);
+//                break;
+//            case("Inv"):
+//                this.inverseNumber(num1);
+//                break;
+//            case("^2"):
+//                this.squareNumber(num1);
+//                break;
+//            case("^"):
+//                this.varExponent(num1, num2);
+//                break;
+//            case("")
 
                 //this.varExponent(num1, num2);
         }

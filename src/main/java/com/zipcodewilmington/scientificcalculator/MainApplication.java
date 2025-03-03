@@ -1,5 +1,5 @@
 package com.zipcodewilmington.scientificcalculator;
-
+import java.util.Scanner;
 /**
  * Created by leon on 2/9/18.
  */
@@ -15,8 +15,11 @@ package com.zipcodewilmington.scientificcalculator;
 
 public class MainApplication {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
         BasicCalc basicCalc = new BasicCalc();
-        SciCalc sciCalc = new SciCalc();
+        //SciCalc sciCalc = new SciCalc();
+        double x;
+        double y;
 
         Console.println("Welcome to my calculator!");
         String s = Console.getStringInput("Enter a string");

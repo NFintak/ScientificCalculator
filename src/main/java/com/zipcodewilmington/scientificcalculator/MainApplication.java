@@ -15,19 +15,17 @@ import java.util.Scanner;
 
 public class MainApplication {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        //Scanner scanner = new Scanner(System.in);  //don't know if we still need it, but if we do just uncomment it
         BasicCalc basicCalc = new BasicCalc();
         //SciCalc sciCalc = new SciCalc();
-        double x;
-        //double y;
 
         Console.println("Welcome to my calculator!");
 
         Double userInput = Console.getDoubleInput("Enter a number: ");
-        Integer functionType = Console.getIntegerInput("Select function: (1: Basic), (2: Scientific), (4: exit)");
+        Integer functionType = Console.getIntegerInput("Select function: (1: Basic) (2: Scientific) (3: Memory) (4: exit)");
         switch (functionType) {
             case(1):
-                Integer operator = Console.getIntegerInput("Select an operator:\n(1 add) (2 subtract) (3 multiply)\n(4 divide) (5 inverse) (6 square)\n(7 var. exponent) (8 square root) (9 invert sign)\n(10 exit)");
+                Integer operator = Console.getIntegerInput("Select an operator:\n(1: add) (2: subtract) (3: multiply)\n(4: divide) (5: inverse) (6: square)\n(7: var. exponent) (8: square root) (9: invert sign)\n(10: exit)");
                 switch (operator) {
                     case(1):
                         Double userInput2 = Console.getDoubleInput("Enter a number: ");
@@ -71,9 +69,11 @@ public class MainApplication {
                         Console.println("%s", result);
                         break;
                     default:
-
+                        Console.print("Err");
                         break;
                 }
+            //case(2):
+            //    Integer function = Console.getIntegerInput("Select a function: (1: ) (2: ) (3: ) ... (i: exit)")
         }
 
         //Console.println("%s", userInput);

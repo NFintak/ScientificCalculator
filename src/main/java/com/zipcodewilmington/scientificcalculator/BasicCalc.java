@@ -4,10 +4,9 @@ import java.util.Scanner;
 
 public class BasicCalc {
     public void basicCalc(String[] args) {
-        BasicCalc basicCalc = new BasicCalc();
-        basicCalc.runBasicCalc();
+        System.out.println("Basic Calculator:");
     }
-
+/*
     Scanner scanner = new Scanner(System.in);
     StringBuilder equations = new StringBuilder();
     double num1; //definitely need to fix
@@ -15,10 +14,10 @@ public class BasicCalc {
     String operator;
     double result;
     boolean useBasicCalc;
-//    String errMessage = "Err";
-//    boolean errPresent = false;
+    String errMessage = "Err";
+    boolean errPresent = false;
 
-/* might be better to move errPrompt() to MainApp
+    //might be better to move errPrompt() to MainApp
     public boolean errPrompt(boolean errPresent) {
         String lineClear = "";
         System.out.println(errMessage);
@@ -76,6 +75,7 @@ public class BasicCalc {
         double invertedSign = -num1;
         return invertedSign;
     }
+    /*
     public boolean closeBasicCalc() {
         useBasicCalc = true;
         System.out.println("Exit Basic Calculator? (yes/no)");
@@ -90,11 +90,11 @@ public class BasicCalc {
     }
 
     public void runEquations() {
-        //pull inputs from console
-        //convert string input for operator into character input
-        //run character input against either switch or if/else to find correct equation
-        //run double inputs through appropriate method, return result
-        //display result on console (with or without full equation?)
+        pull inputs from console
+        convert string input for operator into character input
+        run character input against either switch or if/else to find correct equation
+        run double inputs through appropriate method, return result
+        display result on console (with or without full equation?)
     }
 
     public void runBasicCalc() {
@@ -106,6 +106,6 @@ public class BasicCalc {
                 this.closeBasicCalc();
             }
         }
-    }
+    } */
 
 }

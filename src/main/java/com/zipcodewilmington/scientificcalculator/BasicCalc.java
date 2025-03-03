@@ -64,17 +64,17 @@ public class BasicCalc {
         double invertedSign = -num1;
         return invertedSign;
     }
-    public boolean closeBasicCalc() {
-        System.out.println("Exit Basic Calculator? (yes/no)");
-        String response = scanner.nextLine();
-        if (response.equalsIgnoreCase("yes")) {
-            return !useBasicCalc;
-        } else if (response.equalsIgnoreCase("no")) {
-            return useBasicCalc;
-        } else {
-            return useBasicCalc;
-        }
-    }
+//    public boolean closeBasicCalc() {
+//        System.out.println("Exit Basic Calculator? (yes/no)");
+//        String response = scanner.nextLine();
+//        if (response.equalsIgnoreCase("yes")) {
+//            return !useBasicCalc;
+//        } else if (response.equalsIgnoreCase("no")) {
+//            return useBasicCalc;
+//        } else {
+//            return useBasicCalc;
+//        }
+//    }
 //    public String runEquations(double num1, String operator, double num2) {
 //           pull inputs from console
 //           run String input against either switch or if/else to find correct equation
@@ -106,7 +106,7 @@ public class BasicCalc {
         }
         //    run double inputs through appropriate method, convert result to string
         //    display result on console (with or without full equation?)
-    }
 
 
-}
+
+

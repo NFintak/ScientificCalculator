@@ -63,12 +63,15 @@ public class BasicCalcTest extends TestCase{
     @Test
     public void test1inverseNumber() {
         BasicCalc basicCalc1 = new BasicCalc();
+        double actual = basicCalc1.inverseNumber(8);
+        assertEquals(.125, actual, 0.001);
     }
 
     @Test
     public void test2inverseNumber() {
         BasicCalc basicCalc1 = new BasicCalc();
-
+        double actual = basicCalc1.inverseNumber(.5);
+        assertEquals(2, actual, 0.001);
     }
 
     @Test
@@ -114,8 +117,16 @@ public class BasicCalcTest extends TestCase{
     }
 
     @Test
-    public void {}
+    public void test1invertSign() {
+        BasicCalc basicCalc1 = new BasicCalc();
+        double actual = basicCalc1.invertSign(15);
+        assertEquals(-15, actual, 0.001);
+    }
 
     @Test
-    public void {}
+    public void test2invertSign() {
+        BasicCalc basicCalc1 = new BasicCalc();
+        double actual = basicCalc1.invertSign(-95);
+        assertEquals(95, actual, 0.001);
+    }
 }

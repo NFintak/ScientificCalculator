@@ -18,7 +18,7 @@ public class BasicCalc {
 //    String errMessage = "Err";
 //    boolean errPresent = false;
 
-/* might be better to move this to the mainApp
+/* might be better to move errPrompt() to MainApp
     public boolean errPrompt(boolean errPresent) {
         String lineClear = "";
         System.out.println(errMessage);
@@ -30,19 +30,16 @@ public class BasicCalc {
                 return errPresent;
             }
     }
-*/
+
     public double getNum1() {
-        num1 = scanner.nextDouble();
         return this.num1;
     }
     public double getNum2() {
-        num2 = scanner.nextDouble();
         return this.num2;
     }
     public String getOperator() {
-        operator = scanner.next();
         return this.operator;
-    }
+    } */
     public double addTwoNumbers(double num1, double num2) {
         double sum = num1 + num2;
         return sum;
@@ -60,8 +57,8 @@ public class BasicCalc {
         return quotient;
     }
     public double inverseNumber(double num1) {
-        //double inverse;
-        //return inverse;
+        double inverse = 1 / num1;
+        return inverse;
     }
     public double squareNumber(double num1) {
         double squared = num1 * num1;
@@ -76,8 +73,8 @@ public class BasicCalc {
         return sqRoot;
     }
     public double invertSign(double num1) {
-        //double invertedSign;
-        //return invertedSign;
+        double invertedSign = -num1;
+        return invertedSign;
     }
     public boolean closeBasicCalc() {
         useBasicCalc = true;

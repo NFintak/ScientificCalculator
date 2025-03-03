@@ -4,22 +4,22 @@ import java.util.Scanner;
 
 public class SciCalc {
 
-        public void main(String[] args) {
-            SciCalc sciCalc = new SciCalc();
-            Scanner scanner = new Scanner(System.in);
-            System.out.print("Select: displayMode, memory, trig, degreeRadian, logFunctions, factorial");
-            String input = scanner.nextLine();
-            sciCalc.(input);
-        }
+//        public void main(String[] args) {
+//            SciCalc sciCalc = new SciCalc();
+//            Scanner scanner = new Scanner(System.in);
+//            System.out.print("Select: displayMode, memory, trig, degreeRadian, logFunctions, factorial");
+//            String input = scanner.nextLine();
+//            sciCalc.(input);
+//        }
 
-        public double x;
+    // Change this all to methods only!!
+    // Selection of modes and types all in main make new objs of SciCalc
 
-//    int x = userInput;
 
-    public double logFunctions(){
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Select: Log, InverseLog, Ln, and E^x");
-        String input = scanner.nextLine();
+//    public double logFunctions(){
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.print("Select: Log, InverseLog, Ln, and E^x");
+//        String input = scanner.nextLine();
 
         public double log {
             return Math.log(x);
@@ -33,8 +33,7 @@ public class SciCalc {
         double ex {
             return Math.exp(x);
         }
-        scanner.close();
-    }
+
 
     //Switch Display mode it should be a format change
 
@@ -95,37 +94,29 @@ public class SciCalc {
     }
 
     //Trig Functions it needs to be called then have user select function then run
-    public double trig(){
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Select: Sine, InverseSine, Cosine, Tangent, InverseTangent");
-        String input = scanner.nextLine();
-        public double Sine {
-            double result = Math.sin(x);
-            return result;
+
+        public double sine(double num1) {
+            double result = Math.sin();
         }
 
-        public double InverseSine {
-            double result = Math.asin(x);
-            return result;
+        public double aSine (double num1) {
+            double result = Math.asin();
         }
-        public double Cosine {
-            double result = Math.cos(x);
-            return result;
+
+        public double cosine(double num1) {
+            double result = Math.cos();
         }
-        public double InverseCosine {
-            double result = Math.acos(x);
-            return result;
+        public double inverseCosine {
+            double result = Math.acos();
         }
         public double Tangent {
-            double result = Math.tan(x);
-            return result;
+            double result = Math.tan();
         }
         public double InverseTangent {
             double result = Math.atan(x);
             return result;
         }
-        scanner.close();
-    }
+
 
         //Switch Trig Units it needs to be called then have user select function then run
 

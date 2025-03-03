@@ -16,6 +16,7 @@ package com.zipcodewilmington.scientificcalculator;
 public class MainApplication {
     public static void main(String[] args) {
         BasicCalc basicCalc = new BasicCalc();
+        SciCalc sciCalc = new SciCalc();
 
         Console.println("Welcome to my calculator!");
         String s = Console.getStringInput("Enter a string");

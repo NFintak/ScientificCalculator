@@ -1,13 +1,12 @@
 package com.zipcodewilmington.scientificcalculator;
 //first input = x, second input = y
 //should only have methods, no switches
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class BasicCalc {
     double num1; //change to string??
     double num2;
-    String operator;
-    boolean useBasicCalc = true;
+//    boolean useBasicCalc = true;
 /*    double result;
     String errMessage = "Err";
     boolean errPresent = false;
@@ -27,42 +26,31 @@ public class BasicCalc {
 
      */
     public double addTwoNumbers(double num1, double num2) {
-        double sum = num1 + num2;
-        return sum;
+        return num1 + num2;
     }
     public double subTwoNumbers(double num1, double num2) {
-        double difference = num1 - num2;
-        return difference;
+        return num1 - num2;
     }
     public double multiplyTwoNumbers(double num1, double num2) {
-        double product = num1 * num2;
-        return product;
+        return num1 * num2;
     }
     public double divTwoNumbers(double num1, double num2) {
-        double quotient = num1 / num2;
-        return quotient;
+        return num1 / num2;
     }
     public double inverseNumber(double num1) {
-        double inverse = 1 / num1;
-        return inverse;
+        return 1 / num1;
     }
     public double squareNumber(double num1) {
-        double squared = num1 * num1;
-        return squared;
+        return num1 * num1;
     }
     public double varExponent(double num1, double num2) {
-        int exp1 = num1;
-        int exp2;
-        double exponent = exp1 ^ exp2;
-        return exponent;
+        return Math.pow(num1, num2);
     }
     public double squareRoot(double num1) {
-        double sqRoot = Math.sqrt(num1);
-        return sqRoot;
+        return Math.sqrt(num1);
     }
     public double invertSign(double num1) {
-        double invertedSign = -num1;
-        return invertedSign;
+        return -num1;
     }
 //    public boolean closeBasicCalc() {
 //        System.out.println("Exit Basic Calculator? (yes/no)");
@@ -79,30 +67,31 @@ public class BasicCalc {
 //           pull inputs from console
 //           run String input against either switch or if/else to find correct equation
 //        switch (operator) {
-//            case("+" || "add"):
-//                this.addTwoNumbers(num1, num2);
+//            case("+"):
+//                basicCalc.addTwoNumbers(num1, num2);
 //                break; // set equal to output in either main or console
-//            case("-" || "subtract"):
-//                this.subTwoNumbers(num1, num2);
+//            case("-"):
+//                basicCalc.subTwoNumbers(num1, num2);
 //                break;
-//            case("*" || "multiply"):
-//                this.multiplyTwoNumbers(num1, num2);
+//            case("*"):
+//                basicCalc.multiplyTwoNumbers(num1, num2);
 //                break;
-//            case("/" || "divide"):
-//                this.divTwoNumbers(num1, num2);
+//            case("/"):
+//                basicCalc.divTwoNumbers(num1, num2);
 //                break;
-//            case("inv" || "inverse"):
-//                this.inverseNumber(num1);
+//            case("inv"):
+//                basicCalc.inverseNumber(num1);
 //                break;
 //            case("^2"):
-//                this.squareNumber(num1);
+//                basicCalc.squareNumber(num1);
 //                break;
 //            case("^"):
-//                this.varExponent(num1, num2);
+//                basicCalc.varExponent(num1, num2);
 //                break;
-//            case("" || "square root")
+//            case("sqRt"):
+//                basicCalc.squareRoot(num2);
+//                break;
 
-                //this.varExponent(num1, num2);
         }
         //    run double inputs through appropriate method, convert result to string
         //    display result on console (with or without full equation?)

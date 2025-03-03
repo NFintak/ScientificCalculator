@@ -66,11 +66,10 @@ public class BasicCalc {
         double squared = num1 * num1;
         return squared;
     }
-    //public double varExponent(double num1, double num2) {
+    public double varExponent(double num1, double num2) {
 
-
-      //  double exponent = num1 ^ num2;
-      //  return exponent;
+        double exponent = exp1 ^ exp2;
+        return exponent;
     }
     public double squareRoot(double num1) {
         double sqRoot = Math.sqrt(num1);
@@ -94,26 +93,33 @@ public class BasicCalc {
         }
     }
 */
-    public void runEquations(double num1, String operator, double num2) {
+    public String runEquations(double num1, String operator, double num2) {
         //    pull inputs from console
         //    run String input against either switch or if/else to find correct equation
         switch (operator) {
             case("+"):
-                this.addTwoNumbers(num1, num2); // set equal to output in either main or console
+                this.addTwoNumbers(num1, num2);
+                return ; // set equal to output in either main or console
             case("-"):
                 this.subTwoNumbers(num1, num2);
+                return ;
             case("*"):
                 this.multiplyTwoNumbers(num1, num2);
+                return ;
             case("/"):
                 this.divTwoNumbers(num1, num2);
+                return ;
             case("Inv"):
                 this.inverseNumber(num1);
+                return ;
             case("^2"):
                 this.squareNumber(num1);
+                return ;
             case("^"):
-                this.varExponent(num1, num2);
+
+                //this.varExponent(num1, num2);
         }
-        //    run double inputs through appropriate method, return result
+        //    run double inputs through appropriate method, convert result to string
         //    display result on console (with or without full equation?)
     }
 

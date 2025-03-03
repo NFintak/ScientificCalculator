@@ -3,22 +3,24 @@ package com.zipcodewilmington.scientificcalculator;
 import java.util.Scanner;
 
 public class BasicCalc {
-    public void basicCalc(String[] args) {
+    public static void main(String[] args) {
         BasicCalc basicCalc = new BasicCalc();
-        basicCalc.runBasicCalc();
+        System.out.println("Basic Calculator:");
+
+
     }
 
     Scanner scanner = new Scanner(System.in);
     StringBuilder equations = new StringBuilder();
-    double num1; //definitely need to fix
+    double num1; //change to string??
     double num2;
     String operator;
-    double result;
+/*    double result;
     boolean useBasicCalc;
-//    String errMessage = "Err";
-//    boolean errPresent = false;
+    String errMessage = "Err";
+    boolean errPresent = false;
 
-/* might be better to move errPrompt() to MainApp
+    //might be better to move errPrompt() to MainApp
     public boolean errPrompt(boolean errPresent) {
         String lineClear = "";
         System.out.println(errMessage);
@@ -64,9 +66,11 @@ public class BasicCalc {
         double squared = num1 * num1;
         return squared;
     }
-    public double varExponent(int num1, int num2) {
-        double exponent = num1 ^ num2;
-        return exponent;
+    //public double varExponent(double num1, double num2) {
+
+
+      //  double exponent = num1 ^ num2;
+      //  return exponent;
     }
     public double squareRoot(double num1) {
         double sqRoot = Math.sqrt(num1);
@@ -76,6 +80,7 @@ public class BasicCalc {
         double invertedSign = -num1;
         return invertedSign;
     }
+    /*
     public boolean closeBasicCalc() {
         useBasicCalc = true;
         System.out.println("Exit Basic Calculator? (yes/no)");
@@ -88,24 +93,29 @@ public class BasicCalc {
             return useBasicCalc;
         }
     }
-
-    public void runEquations() {
-        //pull inputs from console
-        //convert string input for operator into character input
-        //run character input against either switch or if/else to find correct equation
-        //run double inputs through appropriate method, return result
-        //display result on console (with or without full equation?)
-    }
-
-    public void runBasicCalc() {
-        System.out.println("Basic Calculator:");
-        while (useBasicCalc) {
-            this.runEquations();
-            System.out.println("Enter 'exit' to close Basic Calculator");
-            if (scanner.next().equalsIgnoreCase("exit")) {
-                this.closeBasicCalc();
-            }
+*/
+    public void runEquations(double num1, String operator, double num2) {
+        //    pull inputs from console
+        //    run String input against either switch or if/else to find correct equation
+        switch (operator) {
+            case("+"):
+                this.addTwoNumbers(num1, num2); // set equal to output in either main or console
+            case("-"):
+                this.subTwoNumbers(num1, num2);
+            case("*"):
+                this.multiplyTwoNumbers(num1, num2);
+            case("/"):
+                this.divTwoNumbers(num1, num2);
+            case("Inv"):
+                this.inverseNumber(num1);
+            case("^2"):
+                this.squareNumber(num1);
+            case("^"):
+                this.varExponent(num1, num2);
         }
+        //    run double inputs through appropriate method, return result
+        //    display result on console (with or without full equation?)
     }
+
 
 }

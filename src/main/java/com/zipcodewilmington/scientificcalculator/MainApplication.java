@@ -27,12 +27,52 @@ public class MainApplication {
         Integer functionType = Console.getIntegerInput("Select function: (1: Basic), (2: Scientific), (4: exit)");
         switch (functionType) {
             case(1):
-                Integer operator = Console.getIntegerInput("Select an operator: (1: add), (2: exit)");
+                Integer operator = Console.getIntegerInput("Select an operator:\n(1 add) (2 subtract) (3 multiply)\n(4 divide) (5 inverse) (6 square)\n(7 var. exponent) (8 square root) (9 invert sign)\n(10 exit)");
                 switch (operator) {
                     case(1):
                         Double userInput2 = Console.getDoubleInput("Enter a number: ");
                         double result = basicCalc.addTwoNumbers(userInput, userInput2);
                         Console.println("%s", result);
+                        break;
+                    case(2):
+                        userInput2 = Console.getDoubleInput("Enter a number: ");
+                        result = basicCalc.subTwoNumbers(userInput, userInput2);
+                        Console.println("%s", result);
+                        break;
+                    case(3):
+                        userInput2 = Console.getDoubleInput("Enter a number: ");
+                        result = basicCalc.multiplyTwoNumbers(userInput, userInput2);
+                        Console.println("%s", result);
+                        break;
+                    case(4):
+                        userInput2 = Console.getDoubleInput("Enter a number: ");
+                        result = basicCalc.divTwoNumbers(userInput, userInput2);
+                        Console.println("%s", result);
+                        break;
+                    case(5):
+                        result = basicCalc.inverseNumber(userInput);
+                        Console.println("%s", result);
+                        break;
+                    case(6):
+                        result = basicCalc.squareNumber(userInput);
+                        Console.println("%s", result);
+                        break;
+                    case(7):
+                        userInput2 = Console.getDoubleInput("Enter a number: ");
+                        result = basicCalc.varExponent(userInput, userInput2);
+                        Console.println("%s", result);
+                        break;
+                    case(8):
+                        result = basicCalc.squareRoot(userInput);
+                        Console.println("%s", result);
+                        break;
+                    case(9):
+                        result = basicCalc.invertSign(userInput);
+                        Console.println("%s", result);
+                        break;
+                    default:
+
+                        break;
                 }
         }
 

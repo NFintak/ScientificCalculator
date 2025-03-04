@@ -34,4 +34,9 @@ public class Console {
         println(prompt);
         return scanner.nextDouble();
     }
+    /*
+    public String errorMessage() {
+
+    }
+     */
 }

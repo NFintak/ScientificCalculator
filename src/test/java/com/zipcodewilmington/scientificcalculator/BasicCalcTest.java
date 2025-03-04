@@ -20,6 +20,13 @@ public class BasicCalcTest extends TestCase{
     }
 
     @Test
+    public void test3addTwoNumbers() {
+        BasicCalc basicCalc1 = new BasicCalc();
+        double actual = basicCalc1.addTwoNumbers(240.50, 6.50);
+        assertEquals(247.00, actual, 0.001);
+    }
+
+    @Test
     public void test1subTwoNumbers() {
         BasicCalc basicCalc1 = new BasicCalc();
         double actual = basicCalc1.subTwoNumbers(10, 5);
@@ -34,6 +41,13 @@ public class BasicCalcTest extends TestCase{
     }
 
     @Test
+    public void test3subTwoNumbers() {
+        BasicCalc basicCalc1 = new BasicCalc();
+        double actual = basicCalc1.subTwoNumbers(-12.50, 5.00);
+        assertEquals(-17.50, actual, 0.001);
+    }
+
+    @Test
     public void test1multiplyTwoNumbers() {
         BasicCalc basicCalc1 = new BasicCalc();
         double actual = basicCalc1.multiplyTwoNumbers(10, 10);
@@ -44,6 +58,14 @@ public class BasicCalcTest extends TestCase{
     public void test2multiplyTwoNumbers() {
         BasicCalc basicCalc1 = new BasicCalc();
         double actual = basicCalc1.multiplyTwoNumbers(-5, 3);
+        assertEquals(-15.00, actual, 0.001);
+    }
+
+    @Test
+    public void test3multiplyTwoNumbers() {
+        BasicCalc basicCalc1 = new BasicCalc();
+        double actual = basicCalc1.multiplyTwoNumbers(-5, -3);
+        assertEquals(15.00, actual, 0.001);
     }
 
     @Test
@@ -58,6 +80,13 @@ public class BasicCalcTest extends TestCase{
         BasicCalc basicCalc1 = new BasicCalc();
         double actual = basicCalc1.divTwoNumbers(5, 2);
         assertEquals(2.50, actual, 0.001);
+    }
+
+    @Test
+    public void test3divTwoNumbers() {
+        BasicCalc basicCalc1 = new BasicCalc();
+        double actual = basicCalc1.divTwoNumbers(-15, -2);
+        assertEquals(7.50, actual, 0.001);
     }
 
     @Test

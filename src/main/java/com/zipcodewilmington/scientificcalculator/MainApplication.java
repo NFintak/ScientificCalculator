@@ -20,6 +20,7 @@ public class MainApplication {
         //SciCalc sciCalc = new SciCalc();
         Integer numOfErrs = 0;
         boolean runCalc = true;
+        Double displayNumber = 0.0;
 
         Console.println("Welcome to my calculator!");
         while (runCalc) {

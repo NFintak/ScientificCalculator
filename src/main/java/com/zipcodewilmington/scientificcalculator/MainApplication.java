@@ -23,7 +23,7 @@ public class MainApplication {
 
         Console.println("Welcome to my calculator!");
         while (runCalc) {
-            Double userInput = Console.getDoubleInput("Enter a number: ");
+            Double userInput = Console.getDoubleInput("Enter a number: "); //may need to move this outside of while loop, re-initialize as equal to result?
             Integer functionType = Console.getIntegerInput("Select function: (1: Basic) (2: Scientific) (3: Memory) (4: exit)");
             switch (functionType) {
                 case (1):

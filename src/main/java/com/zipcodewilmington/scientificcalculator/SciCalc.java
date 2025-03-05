@@ -16,7 +16,6 @@ String num1;
         }
     public double ln( double num1) {
         return Math.log1p(num1);
-//            return (Math.log(num1) / 0.4342944819);
         }
     public double ex(double num1) {
             return Math.exp(num1);
@@ -36,10 +35,9 @@ String num1;
         return String.format("%.8f", Double.valueOf(num1));
     }
 
-//    public String HexString (double num1) {
-//        int x = Integer.parseInt(num1);
-//            return Integer.toHexString(x);
-//    }
+    public String HexString (int num1) {
+            return Integer.toHexString(num1);
+    }
 
 //
 //    //Trig Functions it needs to be called then have user select function then run

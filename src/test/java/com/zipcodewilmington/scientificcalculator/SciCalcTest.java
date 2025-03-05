@@ -152,10 +152,27 @@ class SciCalcTest {
         assertEquals("33.12345679", actual);
     }
 
-//    @Test
-//    void hexString() {
-//    }
-//
+    @Test
+    void hexString() {
+        SciCalc sciCalc1 = new SciCalc();
+        String actual = sciCalc1.HexString(11);
+        assertEquals("b", actual);
+    }
+
+    @Test
+    void hexString2() {
+        SciCalc sciCalc1 = new SciCalc();
+        String actual = sciCalc1.HexString(234);
+        assertEquals("ea", actual);
+    }
+
+    @Test
+    void hexString3() {
+        SciCalc sciCalc1 = new SciCalc();
+        String actual = sciCalc1.HexString(12);
+        assertEquals("c", actual);
+    }
+
     @Test
     void sine() {
         SciCalc sciCalc1 = new SciCalc();

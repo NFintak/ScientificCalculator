@@ -14,9 +14,10 @@ String num1;
     public double inverseLog( double num1) {
             return (Math.log10(num1));
         }
-//    public double ln( double num1) {
+    public double ln( double num1) {
+        return Math.log1p(num1);
 //            return (Math.log(num1) / 0.4342944819);
-//        }
+        }
     public double ex(double num1) {
             return Math.exp(num1);
         }

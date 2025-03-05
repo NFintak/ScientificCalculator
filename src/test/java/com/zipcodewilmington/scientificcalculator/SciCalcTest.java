@@ -47,12 +47,26 @@ class SciCalcTest {
         assertEquals(1.0, actual, 0.001);
     }
 
-//    @Test
-//    void ln() {
-//        SciCalc sciCalc1 = new SciCalc();
-//        double actual = sciCalc1.ln(10);
-//        assertEquals(1, actual, 0.001);
-//    }
+    @Test
+    void ln() {
+        SciCalc sciCalc1 = new SciCalc();
+        double actual = sciCalc1.ln(100);
+        assertEquals(4.605170185988092, actual, 0.1);
+    }
+
+    @Test
+    void ln2() {
+        SciCalc sciCalc1 = new SciCalc();
+        double actual = sciCalc1.ln(10);
+        assertEquals(2.302585092994046, actual, 0.1);
+    }
+
+    @Test
+    void ln3() {
+        SciCalc sciCalc1 = new SciCalc();
+        double actual = sciCalc1.ln(90);
+        assertEquals(4.499809670330265, actual, 0.1);
+    }
 
     @Test
     void ex() {

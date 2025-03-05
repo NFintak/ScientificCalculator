@@ -35,8 +35,9 @@ String num1;
         return String.format("%.8f", Double.valueOf(num1));
     }
 
-    public String HexString (int num1) {
-            return Integer.toHexString(num1);
+    public String HexString (double num1) {
+        int x = (int) num1;
+            return Integer.toHexString(x);
     }
 
 
@@ -48,7 +49,8 @@ String num1;
         }
 
     public double aSine (double num1) {
-            return Math.asin(num1);
+
+        return Math.asin(num1);
         }
 
 
@@ -57,23 +59,28 @@ String num1;
             return Math.cos(radians);
         }
     public double inverseCosine (double num1) {
-            return Math.acos(num1);
+
+        return Math.acos(num1);
         }
+
     public double Tangent (double num1) {
         double radians = Math.toRadians(num1);
             return Math.tan(radians);
         }
     public double InverseTangent (double num1) {
-            return Math.atan(num1);
+
+        return Math.atan(num1);
         }
 
 //        //Switch Trig Units it needs to be called then have user select function then run
 
     public double Radians( double num1) {
-            return Math.toRadians(num1);
+
+        return Math.toRadians(num1);
     }
 
     public double Degrees(double num1) {
+
         return Math.toDegrees(num1);
     }
 

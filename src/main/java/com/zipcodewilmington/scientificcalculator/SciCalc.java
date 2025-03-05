@@ -39,7 +39,7 @@ String num1;
             return Integer.toHexString(num1);
     }
 
-//
+
 //    //Trig Functions it needs to be called then have user select function then run
 
     public double sine(double num1) {

@@ -234,22 +234,6 @@ class SciCalcTest {
         assertEquals(90, actual, 0.001);
     }
 
-//    @Test
-//    void log() {
-//    }
-//
-//    @Test
-//    void inverseLog() {
-//    }
-//
-//    @Test
-//    void ln() {
-//    }
-//
-//    @Test
-//    void ex() {
-//    }
-//
     @Test
     void factorial() {
         SciCalc sciCalc1 = new SciCalc();

@@ -8,10 +8,9 @@ String num1;
 //    // Change this all to methods only!!
 //    // Selection of modes and types all in main make new objs of SciCalc
 
-//    public String log( String num1) {
-//            double x = Double.parseDouble(num1);
-//            return Math.log(x);
-//        }
+    public double log( double num1) {
+            return Math.log(num1);
+        }
 //    public String inverseLog( String num1) {
 //            double x = Double.parseDouble(num1);
 //            return Math.pow(10, num1);

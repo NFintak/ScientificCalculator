@@ -5,12 +5,26 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 class SciCalcTest {
 
-//    @Test
-//    void log() {
-//        SciCalc sciCalc1 = new SciCalc();
-//        double actual = sciCalc1.log("5");
-//        assertEquals(0.69897000, actual, 0.001);
-//    }
+    @Test
+    void log() {
+        SciCalc sciCalc1 = new SciCalc();
+        double actual = sciCalc1.log(5);
+        assertEquals(1.6094379124341003, actual, 0.001);
+    }
+
+    @Test
+    void log2() {
+        SciCalc sciCalc1 = new SciCalc();
+        double actual = sciCalc1.log(10);
+        assertEquals(2.302585092994046, actual, 0.001);
+    }
+
+    @Test
+    void log3() {
+        SciCalc sciCalc1 = new SciCalc();
+        double actual = sciCalc1.log(25);
+        assertEquals(3.2188758248682006, actual, 0.001);
+    }
 //
 //    @Test
 //    void inverseLog() {

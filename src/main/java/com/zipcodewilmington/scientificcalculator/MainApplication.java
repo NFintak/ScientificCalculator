@@ -17,7 +17,7 @@ public class MainApplication {
     public static void main(String[] args) {
         //Scanner scanner = new Scanner(System.in);  //don't know if we still need it, but if we do just uncomment it
         BasicCalc basicCalc = new BasicCalc();
-        //SciCalc sciCalc = new SciCalc();
+        SciCalc sciCalc = new SciCalc();
         Integer numOfErrs = 0;
         boolean runCalc = true;
         Double displayNumber = 0.0;
@@ -77,9 +77,56 @@ public class MainApplication {
                             break;
                     }
                     break;
-                //case(2):
-                //    Integer function = Console.getIntegerInput("Select a function: (1: ) (2: ) (3: ) ... (i: exit)")
-                //case(3): memory
+                case(2):
+                    //should this prompt the user to change the display setting instead, ie: binary, octal, decimal, hexstring?
+                    Integer function = Console.getIntegerInput("Select a function:\n(1: Trigonometry) (2: Logarithmic) (3: ) ... (i: exit)");
+                    switch (function) {
+                        case(1):
+                            Integer trigOperator = Console.getIntegerInput("Select Trigonometry operator:\n(1: Sine) (2: Cosine) (3: Tangent)\n(4: aSine) (5: aCosine) (6: aTangent)\n(7: exit)");
+                            switch (trigOperator) {
+                                case(1):
+                                    double result = sciCalc.sine(userInput);
+                                    Console.println("%s", result);
+                                    break;
+                                case(2):
+                                    result = sciCalc.cosine(userInput);
+                                    Console.println("%s", result);
+                                    break;
+//                                case(3):
+//                                    break;
+//                                case(4):
+//                                    break;
+//                                case(5):
+//                                    break;
+//                                case(6):
+//                                    break;
+//                                case(7):
+//                                    break;
+                                default:
+                                    break;
+                            }
+                            break;
+
+//                            Integer (trigUnits) = Console.getIntegerInput("Select Trig. Units: (1: Radians) (2: Degrees)") {
+//                            switch (trigUnits) {
+//                                case(1):
+//
+//                            }
+                        case(2):
+                            Integer logOperators = Console.getIntegerInput("Select Logarithmic operator:\n()");
+                            switch (logOperators) {
+                                case(1):
+                                    break;
+                                default:
+                                    break;
+                            }
+                        default:
+                            break;
+                    }
+
+
+                case(3): // memory
+                    break;
                 case(4):
                     String closeCalc = Console.getStringInput("Are you sure you want to exit? (yes/no)");
                     if (closeCalc.equalsIgnoreCase("yes")) {
@@ -89,6 +136,9 @@ public class MainApplication {
                     } else {
 
                     }
+                    break;
+                default:
+                    break;
             }
 
             //Console.println("%s", userInput);

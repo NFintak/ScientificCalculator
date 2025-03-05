@@ -28,11 +28,10 @@ String num1;
     public String BinaryString (int num1) {
            return Integer.toBinaryString(num1);
     }
-//    public String OctalString (String num1) {
-//        int x = Integer.parseInt(num1);
-//            return Integer.toOctalString(x);
-//    }
-//
+    public String OctalString (int num1) {
+            return Integer.toOctalString(num1);
+    }
+
 //    public String Decimal (double num1) {
 //        return String.format("%.8f", Double.valueOf(num1));
 //    }

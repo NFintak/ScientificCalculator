@@ -109,10 +109,27 @@ class SciCalcTest {
         String actual = sciCalc1.BinaryString(17);
         assertEquals("10001", actual);
     }
-//
-//    @Test
-//    void octalString() {
-//    }
+
+    @Test
+    void octalString() {
+        SciCalc sciCalc1 = new SciCalc();
+        String actual = sciCalc1.OctalString(527);
+        assertEquals("1017", actual);
+    }
+
+    @Test
+    void octalString2() {
+        SciCalc sciCalc1 = new SciCalc();
+        String actual = sciCalc1.OctalString(16);
+        assertEquals("20", actual);
+    }
+
+    @Test
+    void octalString3() {
+        SciCalc sciCalc1 = new SciCalc();
+        String actual = sciCalc1.OctalString(33);
+        assertEquals("41", actual);
+    }
 //
 //    @Test
 //    void decimal() {

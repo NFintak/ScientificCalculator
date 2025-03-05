@@ -37,9 +37,26 @@ class SciCalcTest {
 //        assertEquals(1, actual, 0.001);
 //    }
 
-//    @Test
-//    void ex() {
-//    }
+    @Test
+    void ex() {
+        SciCalc sciCalc1 = new SciCalc();
+        double actual = sciCalc1.ex(1);
+        assertEquals(2.718281828459045, actual, 0.001);
+    }
+
+    @Test
+    void ex2() {
+        SciCalc sciCalc1 = new SciCalc();
+        double actual = sciCalc1.ex(0);
+        assertEquals(1, actual, 0.001);
+    }
+
+    @Test
+    void ex3() {
+        SciCalc sciCalc1 = new SciCalc();
+        double actual = sciCalc1.ex(10);
+        assertEquals(22026.465794806718, actual, 0.001);
+    }
 //
 //    @Test
 //    void binaryString() {

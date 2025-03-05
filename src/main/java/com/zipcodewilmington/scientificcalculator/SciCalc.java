@@ -17,9 +17,9 @@ String num1;
 //    public double ln( double num1) {
 //            return (Math.log(num1) / 0.4342944819);
 //        }
-//    public String ex(double num1) {
-//            return Math.exp(num1);
-//        }
+    public double ex(double num1) {
+            return Math.exp(num1);
+        }
 //
 //
 //    //Switch Display mode it should be a format change

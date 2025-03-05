@@ -69,49 +69,42 @@ String num1;
 //
 //    //Trig Functions it needs to be called then have user select function then run
 
-    public double sine(String num1) {
-        double x = Double.parseDouble(num1);
-        double radians = Math.toRadians(x);
+    public double sine(double num1) {
+        double radians = Math.toRadians(num1);
             return Math.sin(radians);
         }
 
-    public double aSine (String num1) {
-        double x = Double.parseDouble(num1);
-        double radians = Math.toRadians(x);
+    public double aSine (double num1) {
+        double radians = Math.toRadians(num1);
             return Math.asin(radians);
         }
 
-    public double cosine(String num1) {
-        double x = Double.parseDouble(num1);
-        double radians = Math.toRadians(x);
+
+    public double cosine(double num1) {
+        double radians = Math.toRadians(num1);
             return Math.cos(radians);
         }
-    public double inverseCosine (String num1) {
-        double x = Double.parseDouble(num1);
-        double radians = Math.toRadians(x);
+    public double inverseCosine (double num1) {
+        double radians = Math.toRadians(num1);
             return Math.acos(radians);
         }
-    public double Tangent (String num1) {
-        double x = Double.parseDouble(num1);
-        double radians = Math.toRadians(x);
+    public double Tangent (double num1) {
+        double radians = Math.toRadians(num1);
             return Math.tan(radians);
         }
-    public double InverseTangent (String num1) {
-        double x = Double.parseDouble(num1);
-        double radians = Math.toRadians(x);
+    public double InverseTangent (double num1) {
+        double radians = Math.toRadians(num1);
             return Math.atan(radians);
         }
 
 //        //Switch Trig Units it needs to be called then have user select function then run
 
-    public double Radians( String num1) {
-        double x = Double.parseDouble(num1);
-            return Math.toRadians(x);
+    public double Radians( double num1) {
+            return Math.toRadians(num1);
     }
 
-    public double Degrees(String num1) {
-        double x = Double.parseDouble(num1);
-        return Math.toDegrees(x);
+    public double Degrees(double num1) {
+        return Math.toDegrees(num1);
     }
 
 
@@ -136,8 +129,8 @@ String num1;
 //
 //    // Factorial Function
 
-    public double factorial(String num1){
-        int x = Integer.parseInt(num1);
+    public double factorial(double num1){
+        int x = (int) (num1);
           int f = 1;
           for (int i = 1; i<= x; i++) {
               f = f * i;

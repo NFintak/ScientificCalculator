@@ -25,10 +25,27 @@ class SciCalcTest {
         double actual = sciCalc1.log(25);
         assertEquals(3.2188758248682006, actual, 0.001);
     }
-//
-//    @Test
-//    void inverseLog() {
-//    }
+
+    @Test
+    void inverseLog() {
+        SciCalc sciCalc1 = new SciCalc();
+        double actual = sciCalc1.inverseLog(120);
+        assertEquals(2.0791812460476247, actual, 0.001);
+    }
+
+    @Test
+    void inverseLog2() {
+        SciCalc sciCalc1 = new SciCalc();
+        double actual = sciCalc1.inverseLog(1);
+        assertEquals(0.0, actual, 0.001);
+    }
+
+    @Test
+    void inverseLog3() {
+        SciCalc sciCalc1 = new SciCalc();
+        double actual = sciCalc1.inverseLog(10);
+        assertEquals(1.0, actual, 0.001);
+    }
 
 //    @Test
 //    void ln() {

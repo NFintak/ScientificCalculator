@@ -29,11 +29,14 @@ class SciCalcTest {
 //    @Test
 //    void inverseLog() {
 //    }
-//
+
 //    @Test
 //    void ln() {
+//        SciCalc sciCalc1 = new SciCalc();
+//        double actual = sciCalc1.ln(10);
+//        assertEquals(1, actual, 0.001);
 //    }
-//
+
 //    @Test
 //    void ex() {
 //    }

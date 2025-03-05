@@ -11,11 +11,10 @@ String num1;
     public double log( double num1) {
             return Math.log(num1);
         }
-//    public String inverseLog( String num1) {
-//            double x = Double.parseDouble(num1);
+//    public double inverseLog( double num1) {
 //            return Math.pow(10, num1);
 //        }
-//    public String ln( double num1) {
+//    public double ln( double num1) {
 //            return (Math.log(num1) / 0.4342944819);
 //        }
 //    public String ex(double num1) {

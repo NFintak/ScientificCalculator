@@ -75,8 +75,7 @@ String num1;
         }
 
     public double aSine (double num1) {
-        double radians = Math.toRadians(num1);
-            return Math.asin(radians);
+            return Math.asin(num1);
         }
 
 
@@ -85,16 +84,14 @@ String num1;
             return Math.cos(radians);
         }
     public double inverseCosine (double num1) {
-        double radians = Math.toRadians(num1);
-            return Math.acos(radians);
+            return Math.acos(num1);
         }
     public double Tangent (double num1) {
         double radians = Math.toRadians(num1);
             return Math.tan(radians);
         }
     public double InverseTangent (double num1) {
-        double radians = Math.toRadians(num1);
-            return Math.atan(radians);
+            return Math.atan(num1);
         }
 
 //        //Switch Trig Units it needs to be called then have user select function then run

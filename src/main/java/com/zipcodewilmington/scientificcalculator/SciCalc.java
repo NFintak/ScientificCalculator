@@ -25,10 +25,9 @@ String num1;
 //
 //    //Switch Display mode it should be a format change
 
-//    public String BinaryString (String num1) {
-//        int x = Integer.parseInt(num1);
-//           return Integer.toBinaryString(x);
-//    }
+    public String BinaryString (int num1) {
+           return Integer.toBinaryString(num1);
+    }
 //    public String OctalString (String num1) {
 //        int x = Integer.parseInt(num1);
 //            return Integer.toOctalString(x);

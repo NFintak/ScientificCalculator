@@ -88,13 +88,27 @@ class SciCalcTest {
         double actual = sciCalc1.ex(10);
         assertEquals(22026.465794806718, actual, 0.001);
     }
-//
-//    @Test
-//    void binaryString() {
-//        SciCalc sciCalc1 = new SciCalc();
-//        String actual = sciCalc1.BinaryString("5");
-//        assertEquals("101", actual);
-//    }
+
+    @Test
+    void binaryString() {
+        SciCalc sciCalc1 = new SciCalc();
+        String actual = sciCalc1.BinaryString(5);
+        assertEquals("101", actual);
+    }
+
+    @Test
+    void binaryString2() {
+        SciCalc sciCalc1 = new SciCalc();
+        String actual = sciCalc1.BinaryString(12);
+        assertEquals("1100", actual);
+    }
+
+    @Test
+    void binaryString3() {
+        SciCalc sciCalc1 = new SciCalc();
+        String actual = sciCalc1.BinaryString(17);
+        assertEquals("10001", actual);
+    }
 //
 //    @Test
 //    void octalString() {

@@ -73,6 +73,20 @@ class SciCalcTest {
         assertEquals(0.52359877, actual, 0.001);
     }
 
+    @Test
+    void aSine2() {
+        SciCalc sciCalc1 = new SciCalc();
+        double actual = sciCalc1.aSine(1);
+        assertEquals(1.5707963267949, actual, 0.001);
+    }
+
+    @Test
+    void aSine3() {
+        SciCalc sciCalc1 = new SciCalc();
+        double actual = sciCalc1.aSine(0.9);
+        assertEquals(1.1197695149986, actual, 0.001);
+    }
+
 
     @Test
     void cosine() {
@@ -98,7 +112,7 @@ class SciCalcTest {
     @Test
     void inverseCosine() {
         SciCalc sciCalc1 = new SciCalc();
-        double actual = sciCalc1.aSine(0.5);
+        double actual = sciCalc1.inverseCosine(0.5);
         assertEquals(1.04719755, actual, 0.001);
     }
 
@@ -123,9 +137,26 @@ class SciCalcTest {
         assertEquals(0.26794919, actual, 0.001);
     }
 
-//    @Test
-//    void inverseTangent() {
-//    }
+    @Test
+    void inverseTangent() {
+        SciCalc sciCalc1 = new SciCalc();
+        double actual = sciCalc1.InverseTangent(1);
+        assertEquals(0.78539816339745, actual, 0.001);
+    }
+
+    @Test
+    void inverseTangent2() {
+        SciCalc sciCalc1 = new SciCalc();
+        double actual = sciCalc1.InverseTangent(0.5);
+        assertEquals(0.46364760900081, actual, 0.001);
+    }
+
+    @Test
+    void inverseTangent3() {
+        SciCalc sciCalc1 = new SciCalc();
+        double actual = sciCalc1.InverseTangent(-0.5);
+        assertEquals(-0.46364760900081, actual, 0.001);
+    }
 
     @Test
     void radians() {

@@ -130,11 +130,28 @@ class SciCalcTest {
         String actual = sciCalc1.OctalString(33);
         assertEquals("41", actual);
     }
-//
-//    @Test
-//    void decimal() {
-//    }
-//
+
+    @Test
+    void decimal() {
+        SciCalc sciCalc1 = new SciCalc();
+        String actual = sciCalc1.Decimal(33);
+        assertEquals("33.00000000", actual);
+    }
+
+    @Test
+    void decimal2() {
+        SciCalc sciCalc1 = new SciCalc();
+        String actual = sciCalc1.Decimal(33.123456781);
+        assertEquals("33.12345678", actual);
+    }
+
+    @Test
+    void decimal3() {
+        SciCalc sciCalc1 = new SciCalc();
+        String actual = sciCalc1.Decimal(33.123456789);
+        assertEquals("33.12345679", actual);
+    }
+
 //    @Test
 //    void hexString() {
 //    }

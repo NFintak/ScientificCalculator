@@ -134,16 +134,16 @@ String num1;
 //                return Math.exp(x);
 //            }
 //
-////    // Factorial Function
-//
-//    public double factorial(String num1){
-//        int x = Integer.parseInt(num1);
-//          int f = 1;
-//          for (int i = 1; i<= x; i++) {
-//              f = f * i;
-//          }
-//          return f ;
-//    }
+//    // Factorial Function
+
+    public double factorial(String num1){
+        int x = Integer.parseInt(num1);
+          int f = 1;
+          for (int i = 1; i<= x; i++) {
+              f = f * i;
+          }
+          return f ;
+    }
 
 
 

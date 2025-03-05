@@ -88,8 +88,10 @@ public class MainApplication {
                                     double result = sciCalc.sine(userInput);
                                     Console.println("%s", result);
                                     break;
-//                                case(2):
-//                                    break;
+                                case(2):
+                                    result = sciCalc.cosine(userInput);
+                                    Console.println("%s", result);
+                                    break;
 //                                case(3):
 //                                    break;
 //                                case(4):
